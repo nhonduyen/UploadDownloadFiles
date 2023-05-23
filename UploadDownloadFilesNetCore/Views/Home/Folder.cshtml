@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "List Files in Folder";
+}
+<h1>@ViewData["Title"]</h1>
+<div class="list-group">
+    @foreach (var file in ViewBag.Files)
+    {
+        <a asp-controller="Home" asp-action="Download" asp-route-filepath="@file" class="list-group-item list-group-item-action">
+            @file
+        </a>
+    }
+</div>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://code-maze.com/upload-files-dot-net-core-angular/">upload files apps with ASP.NET Core</a>.</p>
+    <p>Learn about <a href="https://code-maze.com/download-files-dot-net-core-angular/">download files apps with ASP.NET Core</a>.</p>
+    <form class="row g-3" enctype="multipart/form-data" method="post" asp-action="Upload">
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control" type="file" id="formFileMultiple" name="formFileMultiple" multiple>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+</div>
